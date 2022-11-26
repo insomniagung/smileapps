@@ -27,10 +27,20 @@
     text-align: center;
     margin: 0;
   }
+
+  .articles-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .app-bar .app-bar__brand h1 {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .articles-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

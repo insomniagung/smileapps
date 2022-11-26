@@ -1,0 +1,51 @@
+:root {
+  --green: #ade792;
+}
+
+.articlePage {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.articlePage__header {
+  text-align: center;
+}
+
+.articles-list {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.article-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.article-item__content {
+  padding: 16px;
+}
+
+.article-item__header {
+  position: relative;
+}
+
+.artilce-item__image {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+
+.article-item__title {
+  margin: 0 0 10px 0;
+}
+
+.article-item__body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

@@ -8,6 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./styles/style.css";
 import "./styles/homepage.css";
 import "./styles/responsive.css";
+import "./styles/articlePage.css";
 
 const root = createRoot(document.getElementById("root"));
 
