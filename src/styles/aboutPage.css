@@ -1,0 +1,53 @@
+.about-page {
+  text-align: center;
+  /* background: #f5f5f5; */
+}
+
+.about-page__header {
+  padding-top: 50px;
+  color: #444;
+  font-size: 20px;
+  margin: auto;
+  line-height: 50px;
+}
+
+.abouts-list {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 0;
+  display: grid;
+  justify-content: center;
+}
+
+.about-item {
+  margin: 10px;
+  padding: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.about-item:hover {
+  background: #ddd;
+}
+
+.about-item__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.about-item__name {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-item__collage {
+  color: #888;
+}
+
+.about-item__body {
+  margin: 20px 0;
+  /* color: #4e4e4e; */
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getAllArticle } from "../../utils/data";
+import { getAllArticle } from "../../utils/data-local";
 import ArticleList from "../component/ArticleList";
 
 function ArticlePage() {

@@ -12,16 +12,26 @@
 }
 
 .articles-list {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 0;
   display: grid;
-  gap: 16px;
-  margin: 32px 0;
+  justify-content: center;
+  gap: 40px;
 }
 
 .article-item {
+  /* margin: 10px; */
+  padding: 10px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   border-radius: 8px;
   overflow: hidden;
+  transition: 0.3s;
+}
+
+.article-item:hover {
+  background: #ddd;
 }
 
 .article-item__content {
@@ -35,7 +45,8 @@
 .artilce-item__image {
   margin: 0 auto;
   display: block;
-  width: 50%;
+  height: 200px;
+  width: 200px;
 }
 
 .article-item__title {
@@ -43,6 +54,7 @@
 }
 
 .article-item__body {
+  margin: 20px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
