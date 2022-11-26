@@ -1,7 +1,28 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
 .homepage-banner img {
   /* padding: 0 20px 0 0; */
   position: absolute;
   height: 75vh;
   right: 50px;
   top: 100px;
+}
+
+.homepage-text {
+  margin-top: 35vh;
+  padding-left: 10rem;
+  color: rgb(230, 49, 49);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  padding-left: 10.6rem;
+  font-size: 20px;
 }
