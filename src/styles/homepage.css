@@ -1,0 +1,7 @@
+.homepage-banner img {
+  /* padding: 0 20px 0 0; */
+  position: absolute;
+  height: 75vh;
+  right: 50px;
+  top: 100px;
+}

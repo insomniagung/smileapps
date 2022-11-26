@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom";
 import HomePages from "./pages/HomePage";
+import logoLove from "../image/logolove2.png";
 
 function ContentApp() {
   return (
@@ -9,8 +10,8 @@ function ContentApp() {
           <button id="hamburgerButton">☰</button>
         </div>
         <div class="app-bar__brand">
-          <Link to="/">
-            <h1>SmileApp</h1>
+          <Link to="/" className="logo">
+            <img src={logoLove} alt="logo" /><h1>Sistem Informasi Parenting Style</h1>
           </Link>
         </div>
         <nav id="navigationDrawer" class="app-bar__navigation">
@@ -22,7 +23,7 @@ function ContentApp() {
               <Link to="#">Article</Link>
             </li>
             <li>
-              <Link to="#">About-us</Link>
+              <Link to="#">About</Link>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,12 @@
+import React from "react";
+import bannerImage from "../../image/banner.jpg";
+
 function HomePages() {
-  return <h1>Hallo Mamank</h1>;
+  return (
+    <div className="homepage-banner">
+      <img src={bannerImage} alt="banner" />
+    </div>
+  );
 }
 
 export default HomePages;

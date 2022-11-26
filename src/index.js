@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 
 // styles ?
 import "./styles/style.css";
+import "./styles/homepage.css";
 import "./styles/responsive.css";
 
 const root = createRoot(document.getElementById("root"));
