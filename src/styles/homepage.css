@@ -14,6 +14,26 @@
 }
 
 .homepage-banner__body {
-  padding-left: 10.6rem;
+  padding-left: 11.1rem;
   font-size: 20px;
+}
+
+.homepage-button {
+  background-color: rgb(230, 49, 49);
+  color: white;
+  border-radius: 20px;
+  height: 45px;
+  width: 150px;
+  margin-left: 220px;
+  margin-top: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+
+.homepage-button:hover {
+  width: 155px;
+  height: 48px;
+  box-shadow: 3px 5px #000000;
 }
