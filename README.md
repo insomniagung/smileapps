@@ -1,6 +1,6 @@
-# smileapps
-Capstone project by team C22-169.
+# smileapps (Sistem Informasi Parenting Style)
+Capstone Project by Team C22-169.
 
-Project ini dipersembahkan untuk capston dicoding batch 3
+Project ini dipersembahkan untuk capstone dicoding batch 3.
 
-Bismillah Semoga Lancar
+Bismillah Semoga Lancar.
