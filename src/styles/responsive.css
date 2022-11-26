@@ -29,7 +29,10 @@
   }
 
   .articles-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .abouts-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -42,5 +45,15 @@
 @media screen and (min-width: 850px) {
   .articles-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .abouts-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .abouts-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
