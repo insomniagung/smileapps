@@ -22,7 +22,7 @@
 .about-item {
   margin: 10px;
   padding: 22px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.3s;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
@@ -50,4 +50,18 @@
 .about-item__body {
   margin: 20px 0;
   /* color: #4e4e4e; */
+}
+
+.about-item__icon {
+  margin-top: 20px;
+  width: 30px;
+  border-radius: 3px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.about-item:hover .about-item__icon {
+  opacity: 1;
+  transform: translateY(0px);
 }
