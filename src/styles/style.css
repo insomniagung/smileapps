@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: #EFF5F5;
   font-family: "Poppins", sans-serif;
 }
 
@@ -87,5 +88,13 @@ body {
   color: black;
   padding: 8px;
   margin-bottom: 5px;
-  width: 100%;
+  width: 100%; 
+  font-size: 20px;
 }
+
+.app-bar .app-bar__navigation .active {
+  /* text-decoration: underline; */
+  background-color: red;
+  color: white;
+  border-radius: 100px;
+} 

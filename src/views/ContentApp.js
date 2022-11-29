@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { NavLink, Link, Route, Routes } from "react-router-dom";
 import HomePages from "./pages/HomePage";
 import logoLove from "../image/logolove2.png";
 import ArticlePage from "./pages/ArticlePage";
@@ -20,13 +20,28 @@ function ContentApp() {
         <nav id="navigationDrawer" className="app-bar__navigation">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/article">Article</Link>
+              <NavLink
+                to="/article"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
+                Article
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "inactive")}
+              >
+                About
+              </NavLink>
             </li>
           </ul>
         </nav>

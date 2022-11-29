@@ -7,7 +7,7 @@ function AboutPage() {
 
   return (
     <section className="about-page">
-      <h2 className="about-page__header">Team Kami</h2>
+      <h2 className="about-page__header">Our Team</h2>
       <AboutList abouts={abouts} />
     </section>
   );

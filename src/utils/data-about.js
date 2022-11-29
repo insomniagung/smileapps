@@ -1,39 +1,39 @@
-import agung from "../image/profile/agung.jpg";
-import firman from "../image/profile/firman.jpg";
+import agung from "../image/profile/agung LI.jpg";
+import firman from "../image/profile/firmanLI.jpg";
 import sadam from "../image/profile/sadam.jpg";
-import santi from "../image/profile/santi.png";
+import santi from "../image/profile/santiLinkedin.jpg";
 
 let about = [
   {
     id: "about-1",
     name: "Agung Gunawan",
-    collage: "darma persada",
+    collage: "Universitas Darma Persada",
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloribus iure alias harum. Vitae necessitatibus laborum commodi ullam soluta vel, quidem praesentium, non exercitationem fugiat aliquid ipsa. Ullam, tenetur dolores.",
-    profile: "https://github.com/insomniagung",
+    profile: "https://www.linkedin.com/in/agunggunawan14/",
     image: agung,
   },
   {
     id: "about-2",
     name: "Firmansyah",
-    collage: "darma persada",
+    collage: "Universitas Darma Persada",
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloribus iure alias harum. Vitae necessitatibus laborum commodi ullam soluta vel, quidem praesentium, non exercitationem fugiat aliquid ipsa. Ullam, tenetur dolores.",
-    profile: "https://github.com/firmanxyz",
+    profile: "https://www.linkedin.com/in/firman-sah-711010233/",
     image: firman,
   },
   {
     id: "about-3",
-    name: "Santi Septianti",
-    collage: "jauh",
+    name: "Santi Septiani",
+    collage: "Universitas Bengkulu",
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloribus iure alias harum. Vitae necessitatibus laborum commodi ullam soluta vel, quidem praesentium, non exercitationem fugiat aliquid ipsa. Ullam, tenetur dolores.",
-    profile: "https://github.com/Septiani272",
+    profile: "https://www.linkedin.com/in/santi-septiani/",
     image: santi,
   },
   {
     id: "about-4",
     name: "Muhammad Sadam Mahendra",
-    collage: "Darma Persada",
+    collage: "Universitas Darma Persada",
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloribus iure alias harum. Vitae necessitatibus laborum commodi ullam soluta vel, quidem praesentium, non exercitationem fugiat aliquid ipsa. Ullam, tenetur dolores.",
-    profile: "https://github.com/SadamMahendra",
+    profile: "https://www.linkedin.com/in/muhammad-sadam-mahendra-850a2a233/",
     image: sadam,
   },
 ];
