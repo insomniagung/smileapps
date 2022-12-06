@@ -1,16 +1,23 @@
 import React from "react";
-import bannerImage from "../../image/banner.jpg";
+import wave from "../../image/wave.svg";
+import family from "../../image/undraw_family.svg";
 import { Link } from "react-router-dom";
 
 function HomePages() {
   return (
-    <div className="homepage-banner">
-      <h1 className="homepage-banner__title">Smile Apps</h1>
-      <p className="homepage-banner__body">Solusi Keluarga Harmonis</p>
-      <Link to="/article">
-      <button className="homepage-button">Mulai</button>
-      </Link>
-      <img src={bannerImage} alt="banner" className="homepage-banner__image" />
+    <div className="jumbotron">
+      <div className="jumbotron-container">
+        <div className="jumbotron-content">
+          <h1 className="title">Smile App</h1>
+          <p className="text">Solusi keluarga pintar</p>
+          <Link to="/article">
+            <button className="button">Mulai </button>
+          </Link>
+        </div>
+        <div className="dummy"></div>
+      </div>
+      <img className="family" src={family} alt="" />
+      <img className="wave" src={wave} alt="" />
     </div>
   );
 }
