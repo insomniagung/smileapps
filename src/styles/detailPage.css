@@ -1,0 +1,9 @@
+.detail-list {
+    max-width: 1000px;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+  }
+

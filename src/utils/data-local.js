@@ -1,4 +1,4 @@
-let article = [
+let articles = [
   {
     id: "article-1",
     title: "Cara Mendapatkan Hak Asuh Anak Bersama",
@@ -20,7 +20,22 @@ let article = [
 ];
 
 function getAllArticle() {
-  return article;
+  return articles;
 }
 
-export { getAllArticle };
+function getArticle(id) {
+  const foundArticle = articles.find((article) => article.id === id);
+  return foundArticle;
+}
+
+const formatDate = (date) => {
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return new Date(date).toLocaleDateString("id-ID", options);
+};
+
+export { getAllArticle, getArticle, formatDate };

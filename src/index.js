@@ -12,6 +12,8 @@ import "./styles/articlePage.css";
 import "./styles/aboutPage.css";
 import "./styles/loginPage.css";
 
+import "./styles/detailPage.css";
+
 const root = createRoot(document.getElementById("root"));
 
 root.render(

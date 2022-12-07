@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
 import { getUserLogged, putAccessToken } from "../utils/network-data";
 import { useEffect, useState } from "react";
+import DetailPage from "./pages/DetailPage";
 
 function ContentApp() {
   const [authedUser, setAuthedUser] = useState(null);
@@ -111,6 +112,7 @@ function ContentApp() {
         <Routes>
           <Route path="/" element={<HomePages />} />
           <Route path="/article" element={<ArticlePage />} />
+          <Route path="/article/post/:id" element={<DetailPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/*" element={<LoginPage />} />
         </Routes>

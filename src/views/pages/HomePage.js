@@ -9,7 +9,7 @@ function HomePages() {
       <div className="jumbotron-container">
         <div className="jumbotron-content">
           <h1 className="title">Smile App</h1>
-          <p className="text">Solusi keluarga pintar</p>
+          <p className="text">Selamat datang di Website Sistem Informasi Parenting Style.</p>
           <Link to="/article">
             <button className="button">Mulai </button>
           </Link>
