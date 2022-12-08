@@ -4,6 +4,7 @@ import logoLove from "../image/undraw_family.svg";
 import ArticlePage from "./pages/ArticlePage";
 import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 import { getUserLogged, putAccessToken } from "../utils/network-data";
 import { useEffect, useState } from "react";
 import DetailPage from "./pages/DetailPage";
@@ -58,7 +59,9 @@ function ContentApp() {
               path="/*"
               element={<LoginPage loginSuccess={onLoginSuccess} />}
             />
+            <Route path="/register" element={<RegisterPage />} />
           </Routes>
+          
         </main>
       </div>
     );
