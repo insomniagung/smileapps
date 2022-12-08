@@ -1,6 +1,7 @@
 import LoginInput from "../component/LoginInput";
 import { login } from "../../utils/network-data";
 import playTime from "../../image/play_time.svg";
+import {Link} from 'react-router-dom';
 
 function LoginPage({ loginSuccess }) {
   async function onLogin({ email, password }) {
@@ -18,6 +19,7 @@ function LoginPage({ loginSuccess }) {
           <h1 className="title">Login</h1>
           <p className="text">Welcome back mamank</p>
           <LoginInput valueState={onLogin} />
+          <p>Belum punya akun?<Link to="/register">Daftar disini</Link></p>
         </div>
         <div className="content-right">
           <img src={playTime} alt="" />
