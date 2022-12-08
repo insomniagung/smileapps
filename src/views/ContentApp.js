@@ -1,12 +1,13 @@
 import { NavLink, Link, Route, Routes } from "react-router-dom";
 import HomePages from "./pages/HomePage";
-import logoLove from "../image/logolove2.png";
+import logoLove from "../image/undraw_family.svg";
 import ArticlePage from "./pages/ArticlePage";
 import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
 import { getUserLogged, putAccessToken } from "../utils/network-data";
 import { useEffect, useState } from "react";
 import DetailPage from "./pages/DetailPage";
+import { FiLogOut } from "react-icons/fi";
 
 function ContentApp() {
   const [authedUser, setAuthedUser] = useState(null);
@@ -102,7 +103,9 @@ function ContentApp() {
             </li>
             <li>
               <button className="button-logout" onClick={onLogout}>
-                logout ?
+                <Link>
+                  Logout <FiLogOut />
+                </Link>
               </button>
             </li>
           </ul>

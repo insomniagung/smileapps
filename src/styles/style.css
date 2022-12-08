@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #EFF5F5;
+  background-color: #eff5f5;
   font-family: "Poppins", sans-serif;
 }
 
@@ -88,13 +88,24 @@ body {
   color: black;
   padding: 8px;
   margin-bottom: 5px;
-  width: 100%; 
+  width: 100%;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .app-bar .app-bar__navigation .active {
   /* text-decoration: underline; */
-  background-color: red;
+  background-color: #a2d9ff;
   color: white;
   border-radius: 100px;
-} 
+}
+
+.button-logout {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  width: 100%;
+}

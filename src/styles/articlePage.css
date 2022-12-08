@@ -27,7 +27,8 @@
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   border-radius: 8px;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
+  background: #ffff;
 }
 
 .article-item:hover {
@@ -51,6 +52,13 @@
 
 .article-item__title {
   margin: 0 0 10px 0;
+  color: black;
+}
+
+a.article-item__link {
+  text-decoration: none;
+  color: #51b4f9;
+  font-weight: bold;
 }
 
 .article-item__body {
