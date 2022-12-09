@@ -36,24 +36,7 @@ async function login({ email, password }) {
 
   return { error: false, data: responseJson.data };
 }
-async function register({ name, email, password }) {
-  const response = await fetch(`${BASE_URL}/register`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ name, email, password }),
-  });
 
-  const responseJson = await response.json();
-
-  if (responseJson.status !== 'success') {
-    alert(responseJson.message);
-    return { error: true };
-  }
-
-  return { error: false };
-}
 async function getUserLogged() {
   const response = await fetchWithToken(`${BASE_URL}/users/me`);
   const responseJson = await response.json();
@@ -65,4 +48,4 @@ async function getUserLogged() {
   return { error: false, data: responseJson.data };
 }
 
-export { getAccessToken,register, putAccessToken, login, getUserLogged };
+export { getAccessToken, putAccessToken, login, getUserLogged };

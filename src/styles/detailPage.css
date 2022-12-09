@@ -1,9 +1,39 @@
 .detail-list {
-    max-width: 1000px;
-    margin: auto;
-    padding: 45px 0;
-    display: grid;
-    justify-content: center;
-    gap: 40px;
-  }
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  background: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 10rem;
+  box-shadow: 0 4px 8px 0 rgb(87 249 227 / 48%);
+}
 
+.detail-list .content-detail {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
+}
+
+.detail-list .content-detail p {
+  padding-top: 10px;
+}
+
+.detail-list .content-detail span {
+  padding-top: 10px;
+}
+
+.detail-list .content-detail span {
+  color: rgb(112, 106, 106);
+}
+
+.detail-list,
+img {
+  border-radius: 10px;
+}
+
+.detail-list .detail-img {
+  width: 100%;
+}
