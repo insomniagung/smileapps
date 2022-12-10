@@ -13,6 +13,7 @@ import { FiLogOut } from "react-icons/fi";
 function ContentApp() {
   const [authedUser, setAuthedUser] = useState(null);
   const [initializing, setInitializing] = useState(true);
+  // const [drawer, setDrawer] = useState(false);
 
   async function onLoginSuccess({ accessToken }) {
     putAccessToken(accessToken);
@@ -35,6 +36,21 @@ function ContentApp() {
     putAccessToken("");
   }
 
+  const toggleDrawer = () => {
+    const button = document.querySelector("#hamburgerButton");
+    const drawer = document.querySelector("#navigationDrawer");
+    const content = document.querySelector("#root");
+
+    button.addEventListener("click", (event) => {
+      drawer.classList.toggle("open");
+      event.stopPropagation();
+    });
+
+    content.addEventListener("click", () => {
+      drawer.classList.remove("open");
+    });
+  };
+
   if (initializing === true) {
     return;
   }
@@ -43,9 +59,6 @@ function ContentApp() {
     return (
       <div className="app-container">
         <header className="app-bar">
-          <div className="app-bar__menu">
-            <button id="hamburgerButton">☰</button>
-          </div>
           <div className="app-bar__brand">
             <Link to="/" className="logo">
               <img src={logoLove} alt="logo" className="logo__image" />
@@ -69,7 +82,9 @@ function ContentApp() {
     <div className="app-container">
       <header className="app-bar">
         <div className="app-bar__menu">
-          <button id="hamburgerButton">☰</button>
+          <button id="hamburgerButton" onClick={toggleDrawer}>
+            ☰
+          </button>
         </div>
         <div className="app-bar__brand">
           <Link to="/" className="logo">
@@ -119,7 +134,6 @@ function ContentApp() {
           <Route path="/article" element={<ArticlePage />} />
           <Route path="/article/post/:id" element={<DetailPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/*" element={<LoginPage />} />
         </Routes>
       </main>
     </div>
