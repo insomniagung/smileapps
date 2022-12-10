@@ -36,12 +36,6 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  .content-right {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 768.1px) {
   .jumbotron {
     min-height: 80vh;
