@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768.1px) {
   .jumbotron {
     min-height: 80vh;
   }
@@ -48,6 +48,31 @@
   .family,
   .dummy {
     display: none;
+  }
+
+  .input-login button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .loginPage {
+    padding: 50px !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-right {
+    display: block !important;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    background-color: #a2d9ff;
+  }
+
+  .content-right img {
+    max-height: 500px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 }
 
@@ -64,6 +89,12 @@
 
   .abouts-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .input-login {
+    padding: 2rem;
   }
 }
 

@@ -2,10 +2,9 @@
   background-color: #eff5f5;
 }
 .loginPage {
-  padding: 50px;
+  padding: 20px;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 /* content-left */
@@ -58,14 +57,5 @@
 }
 
 .content-right {
-  position: relative;
-  border-radius: 0 10px 10px 0;
-  background-color: #a2d9ff;
-}
-
-.content-right img {
-  max-height: 500px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  display: none;
 }
