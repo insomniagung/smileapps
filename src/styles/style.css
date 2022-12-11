@@ -109,3 +109,8 @@ body {
   display: inline-block;
   width: 100%;
 }
+
+.not-found-page {
+  margin-top: 30vh;
+  text-align: center;
+}
