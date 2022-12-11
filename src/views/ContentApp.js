@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import DetailPage from "./pages/DetailPage";
 import RegisterPage from "./pages/RegisterPage";
 import { FiLogOut } from "react-icons/fi";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function ContentApp() {
   const [authedUser, setAuthedUser] = useState(null);
@@ -134,6 +135,7 @@ function ContentApp() {
           <Route path="/article" element={<ArticlePage />} />
           <Route path="/article/post/:id" element={<DetailPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </main>
     </div>
