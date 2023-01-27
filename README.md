@@ -1,7 +1,9 @@
-# Smile-Apps (Sistem Informasi Parenting Style)
+# SmileApps (Sistem Informasi Parenting Style)
+Project Brief | https://bit.ly/projectbrief-smileapps
+
 Capstone Project presented by Team C22-169.
 
-This project was created to meet the requirements for participating in the Dicoding Challenge.
+This project was created to meet the requirements for participating in the Dicoding Challenge (Program SIB Dicoding X Kampus Merdeka).
 
 Participants involved:
 1. Agung Gunawan | https://www.linkedin.com/in/agunggunawan14/
